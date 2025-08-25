@@ -1,0 +1,382 @@
+/* Book Detail Section */
+.book-detail {
+    background-color: #fafafa;
+    padding: 50px 0;
+}
+
+.book-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.book-header h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+}
+
+.book-header .underline {
+    background-color: #ff7e5f;
+    width: 60px;
+    height: 3px;
+    margin: 10px auto;
+}
+
+.book-details h4 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.book-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.book-details p strong {
+    color: #333;
+}
+
+.book-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-details i {
+    color: #ff7e5f;
+    margin-right: 8px;
+}
+
+.center-content {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.center-content .btn-primary {
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #db680f; /* Base orange color */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.center-content .btn-primary:hover {
+    background-color: #e67e22;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .book-header h2 {
+        font-size: 28px;
+    }
+
+    .book-details h4 {
+        font-size: 20px;
+    }
+
+    .book-details p {
+        font-size: 14px;
+    }
+}
+
+/* Style the cart details section */
+.cart-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.cart-details h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cart-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-details table th, .cart-details table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-details table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.cart-details table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.cart-details table a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cart-details table a:hover {
+    text-decoration: underline;
+}
+
+.cart-details .btn {
+    padding: 12px 20px;
+    background-color: #db680f; /* Base orange color */
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.cart-details .btn:hover {
+    background-color: #e67e22; /* Lighter orange shade for hover */
+}
+
+
+/* Styling for empty cart message */
+.cart-details p {
+    font-size: 16px;
+    color: #999;
+    font-style: italic;
+}
+
+/* Cart Actions Buttons */
+.cart-actions .btn {
+    padding: 12px 20px;
+    background-color: #3498db; /* Blue color for Clear Cart, Add More Books */
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin: 5px; /* Space between buttons */
+}
+
+.cart-actions .btn:hover {
+    background-color: #2980b9; /* Darker blue for hover */
+}
+
+/* Additional button styles */
+.cart-actions .btn:nth-child(2) {
+    background-color: #27ae60; /* Green color for Update Cart */
+}
+
+.cart-actions .btn:nth-child(2):hover {
+    background-color: #2ecc71; /* Lighter green for hover */
+}
+
+.cart-actions .btn:nth-child(3) {
+    background-color: #e67e22; /* Orange color for Proceed to Borrow */
+}
+
+.cart-actions .btn:nth-child(3):hover {
+    background-color: #f39c12; /* Lighter orange for hover */
+}
+
+.cart-actions .btn:nth-child(4) {
+    background-color: #f39c12; /* Yellow color for Add More Books */
+}
+
+.cart-actions .btn:nth-child(4):hover {
+    background-color: #e67e22; /* Darker yellow for hover */
+}
+
+/* Borrow Confirmation Section */
+.borrow-confirm {
+    background-color: #fafafa;
+    padding: 50px 0;
+}
+
+.borrow-confirm h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.borrow-confirm .underline {
+    background-color: #ff7e5f;
+    width: 60px;
+    height: 3px;
+    margin: 10px auto;
+}
+
+.borrow-confirm .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Borrow Cart Table */
+.borrow-confirm table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.borrow-confirm table th,
+.borrow-confirm table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.borrow-confirm table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.borrow-confirm table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.borrow-confirm table input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 50px;
+}
+
+.borrow-confirm table input:focus {
+    border-color: #3498db;
+}
+
+.borrow-confirm .form-group {
+    margin-top: 20px;
+}
+
+.borrow-confirm .form-group label {
+    font-size: 16px;
+    color: #333;
+}
+
+.borrow-confirm .form-group input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.borrow-confirm .form-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.borrow-confirm .form-actions .btn {
+    padding: 12px 20px;
+    background-color: #db680f; /* Base orange color */
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.borrow-confirm .form-actions .btn:hover {
+    background-color: #e67e22;
+}
+
+/* Styling for Borrow Cart Empty State */
+.borrow-confirm p {
+    font-size: 16px;
+    color: #999;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .borrow-confirm h2 {
+        font-size: 28px;
+    }
+
+    .borrow-confirm table th, .borrow-confirm table td {
+        font-size: 14px;
+    }
+
+    .borrow-confirm .form-group input {
+        font-size: 14px;
+    }
+
+    .borrow-confirm .form-actions .btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Make table responsive */
+.table-responsive {
+    overflow-x: auto; /* Adds horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    margin-bottom: 15px;
+}
+
+/* Ensure the table takes full width */
+table {
+    width: 100%;
+    margin: 0;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Ensure buttons are responsive */
+.btn {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+/* Media Queries for small screens */
+@media (max-width: 768px) {
+    .table th, .table td {
+        font-size: 12px;
+    }
+
+    .table th {
+        padding: 6px;
+    }
+
+    .table td {
+        padding: 6px;
+    }
+
+    /* Horizontal Scroll on small screens */
+    .table-responsive {
+        overflow-x: scroll;
+    }
+
+    .table {
+        width: 100%;
+        table-layout: auto;
+    }
+}
