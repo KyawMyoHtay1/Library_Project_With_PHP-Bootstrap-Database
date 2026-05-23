@@ -63,4 +63,8 @@ $resolvedOutput = [System.IO.Path]::GetFullPath($OutputFile)
     --single-transaction `
     --result-file=$resolvedOutput
 
+$dumpContents = Get-Content $resolvedOutput -Raw
+$dumpContents = $dumpContents -replace "`r?`n  ``StaffID`` varchar\(30\) NOT NULL DEFAULT current_timestamp\(\),", "`r`n  ``StaffID`` varchar(30) NOT NULL,"
+Set-Content -Path $resolvedOutput -Value $dumpContents -NoNewline
+
 Write-Host "Database export created:" $resolvedOutput
