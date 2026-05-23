@@ -25,6 +25,27 @@ This project can be deployed to Railway as a plain PHP application.
 6. Import your local `librarydb` schema and data into the Railway MySQL database.
 7. Redeploy the web service if Railway does not trigger a deploy automatically after variables are added.
 
+### Reference variable format
+
+If you use Railway's RAW editor instead of the variable picker, the reference syntax is:
+
+- `MYSQLHOST=${{MySQL.MYSQLHOST}}`
+- `MYSQLPORT=${{MySQL.MYSQLPORT}}`
+- `MYSQLUSER=${{MySQL.MYSQLUSER}}`
+- `MYSQLPASSWORD=${{MySQL.MYSQLPASSWORD}}`
+- `MYSQLDATABASE=${{MySQL.MYSQLDATABASE}}`
+- `MYSQL_URL=${{MySQL.MYSQL_URL}}`
+
+Replace `MySQL` with the exact name of your Railway MySQL service if it differs.
+
+### Helper scripts
+
+- Export local database: `powershell -ExecutionPolicy Bypass -File .\scripts\export-librarydb.ps1`
+- Import into Railway MySQL:
+  `powershell -ExecutionPolicy Bypass -File .\scripts\import-railway-mysql.ps1 -DbHost "<RAILWAY_HOST>" -Port <RAILWAY_PORT> -User "<RAILWAY_USER>" -Database "<RAILWAY_DATABASE>"`
+- Preview the import command first:
+  `powershell -ExecutionPolicy Bypass -File .\scripts\import-railway-mysql.ps1 -DbHost "<RAILWAY_HOST>" -Port <RAILWAY_PORT> -User "<RAILWAY_USER>" -Database "<RAILWAY_DATABASE>" -DryRun`
+
 ## Important caveats
 
 - There is no SQL dump in this repository, so you will need to export your local `librarydb` database and import it into Railway manually.
