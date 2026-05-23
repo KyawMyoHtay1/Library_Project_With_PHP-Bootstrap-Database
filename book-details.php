@@ -96,7 +96,7 @@ if (!$book) {
                     <?php if ($book['Image'] != '') { ?>
                         <img src="<?php echo $book['Image']; ?>" alt="<?php echo $book['Title']; ?>" class="img-fluid" />
                     <?php } else { ?>
-                        <img src="bookimage/default.jpg" alt="Default Image" class="img-fluid" />
+                        <img src="images/error-img.png" alt="Default Image" class="img-fluid" />
                     <?php } ?>
                 </div>
             </div>

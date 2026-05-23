@@ -6,6 +6,7 @@ This project can be deployed to Railway as a plain PHP application.
 
 - `dbconnect.php` now reads Railway-friendly MySQL environment variables.
 - `railway.json` tells Railway to use Railpack and check `/health.php`.
+- `railway.json` also sets an explicit PHP start command: `php -S 0.0.0.0:$PORT -t .`.
 - `health.php` returns HTTP 200 for Railway health checks.
 
 ## Railway setup
@@ -20,13 +21,15 @@ This project can be deployed to Railway as a plain PHP application.
    - `MYSQLPASSWORD`
    - `MYSQLDATABASE`
    - Optional: `MYSQL_URL`
-5. Import your local `librarydb` schema and data into the Railway MySQL database.
-6. Redeploy the web service if Railway does not trigger a deploy automatically after variables are added.
+5. In the web service's Settings -> Deploy section, confirm the effective start command is `php -S 0.0.0.0:$PORT -t .` if you override settings in the dashboard.
+6. Import your local `librarydb` schema and data into the Railway MySQL database.
+7. Redeploy the web service if Railway does not trigger a deploy automatically after variables are added.
 
 ## Important caveats
 
 - There is no SQL dump in this repository, so you will need to export your local `librarydb` database and import it into Railway manually.
 - Book image uploads are stored in `bookimage/`. Railway's filesystem is ephemeral, so new uploads can disappear after redeploys unless you move uploads to persistent storage.
+- If you decide to use a Railway Volume for uploads, Railway's docs say relative app paths should be mounted under `/app`, so `bookimage/` should be mounted at `/app/bookimage`.
 - The safest long-term option for uploads is object storage such as S3 or Cloudinary. A Railway volume is possible too, but you would need to seed your existing `bookimage/` files carefully before relying on it in production.
 
 ## Local development

@@ -149,7 +149,7 @@ if (!$bookResult) {
                         <?php if ($book['Image'] != '') { ?>
                             <img src="<?php echo $book['Image']; ?>" alt="<?php echo $book['Title']; ?>" />
                         <?php } else { ?>
-                            <img src="bookimage/default.jpg" alt="Default Image" />
+                            <img src="images/error-img.png" alt="Default Image" />
                         <?php } ?>
                         <figcaption class="bg-orange">
                             <div class="info-block">
