@@ -1,0 +1,9 @@
+{
+  "name": "kyawmyohtay/library-project-with-php-bootstrap-database",
+  "description": "Plain PHP library management system deployed on Railway.",
+  "type": "project",
+  "require": {
+    "php": "^8.4",
+    "ext-mysqli": "*"
+  }
+}

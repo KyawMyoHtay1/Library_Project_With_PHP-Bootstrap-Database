@@ -55,7 +55,9 @@ $resolvedOutput = [System.IO.Path]::GetFullPath($OutputFile)
 
 & $dumpExe `
     -u $User `
-    --databases $Database `
+    $Database `
+    --no-create-db `
+    --skip-add-drop-database `
     --routines `
     --triggers `
     --single-transaction `

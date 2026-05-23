@@ -7,6 +7,7 @@ This project can be deployed to Railway as a plain PHP application.
 - `dbconnect.php` now reads Railway-friendly MySQL environment variables.
 - `railway.json` tells Railway to use Railpack and check `/health.php`.
 - `railway.json` also sets an explicit PHP start command: `php -S 0.0.0.0:$PORT -t .`.
+- `composer.json` requires `ext-mysqli` so Railpack installs the MySQL extension needed by this app.
 - `health.php` returns HTTP 200 for Railway health checks.
 
 ## Railway setup
@@ -45,6 +46,8 @@ Replace `MySQL` with the exact name of your Railway MySQL service if it differs.
   `powershell -ExecutionPolicy Bypass -File .\scripts\import-railway-mysql.ps1 -DbHost "<RAILWAY_HOST>" -Port <RAILWAY_PORT> -User "<RAILWAY_USER>" -Database "<RAILWAY_DATABASE>"`
 - Preview the import command first:
   `powershell -ExecutionPolicy Bypass -File .\scripts\import-railway-mysql.ps1 -DbHost "<RAILWAY_HOST>" -Port <RAILWAY_PORT> -User "<RAILWAY_USER>" -Database "<RAILWAY_DATABASE>" -DryRun`
+
+The export script intentionally dumps tables and data without `CREATE DATABASE`, which makes the SQL file safer to import into Railway's already-provisioned MySQL database.
 
 ## Important caveats
 
