@@ -45,9 +45,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $insertResult = mysqli_query($connect, $insertQuery);
 
         if ($insertResult) {
-            echo "<script>alert('Thank you for subscribing to our newsletter!'); window.location='index-2.php';</script>"; // Redirect to home or any page
+            echo "<script>alert('Thank you for subscribing to our newsletter!'); window.location='index.php';</script>";
         } else {
-            echo "<script>alert('Error: Could not subscribe. Please try again.'); window.location='index-2.php';</script>"; // Handle error
+            echo "<script>alert('Error: Could not subscribe. Please try again.'); window.location='index.php';</script>";
         }
     } else {
         // Email is not valid
@@ -274,7 +274,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <span class="underline center"></span>
                     <p class="lead">Stay up-to-date with the latest books, events, and news from Libraria by subscribing to our newsletter!</p>
                 </div>
-                <form method="POST" action="index-2.php"> <!-- Form submits to newsletter_subscribe.php -->
+                <form method="POST" action="index.php">
                     <div class="form-group">
                         <input class="form-control" placeholder="Enter your Email!" id="newsletter" name="newsletter" type="email" required>
                         <input class="form-control" value="Subscribe" type="submit">

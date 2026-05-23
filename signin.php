@@ -100,7 +100,7 @@ if (isset($_POST['btnlogin'])) {
         echo "<script>window.alert('Login Failed! Attempt 2')</script>";
     } elseif ($_SESSION['error'] >= 3) {
         echo "<script>window.alert('Login Failed! Attempt 3. You are locked out.')</script>";
-        echo "<script>window.location='LoginTimer2.php'</script>"; // Redirect to lockout page
+        echo "<script>window.location='loginTimer2.php'</script>";
         exit();
     }
 }

@@ -82,7 +82,7 @@ $bookResult = mysqli_query($connect, $bookQuery);
         </div>
         <div class="breadcrumb">
             <ul>
-                <li><a href="index-2.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li>Search Books</li>
             </ul>
         </div>

@@ -55,7 +55,7 @@ if (!isset($_SESSION['SID'])) {
         } else {
             echo "<script>
                     alert('Book not found!');
-                    window.location.href='editdeletebook.php';
+                    window.location.href='managebook.php';
                   </script>";
         }
 

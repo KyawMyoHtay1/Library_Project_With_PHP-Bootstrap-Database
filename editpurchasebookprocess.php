@@ -59,7 +59,7 @@ if (!isset($_SESSION['SID'])) {
         // Ensure there is enough stock if decreasing
         if ($quantityDifference < 0 && abs($quantityDifference) > $currentStock) {
             echo "<script>window.alert('Not enough stock to reduce by this quantity.')</script>";
-            echo "<script>window.location='editpurchasebook.php?edit=$PurchaseBookID'</script>";
+            echo "<script>window.location='editpurchasebookprocess.php?edit=$PurchaseBookID'</script>";
             exit();
         }
 

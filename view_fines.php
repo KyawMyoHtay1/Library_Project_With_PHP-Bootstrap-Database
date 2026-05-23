@@ -64,7 +64,7 @@ $result = mysqli_query($connect, $query);
         </div>
         <div class="breadcrumb">
             <ul>
-                <li><a href="index-2.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li>My Fines</li>
             </ul>
         </div>

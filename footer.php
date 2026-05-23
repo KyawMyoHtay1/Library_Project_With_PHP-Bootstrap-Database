@@ -82,7 +82,7 @@
         <div class="container">
             <div class="row">
                 <div class="footer-text col-md-3">
-                    <p><a target="_blank" href="http://localhost:90/L5104/index.php">Visit our Website</a></p>
+                    <p><a href="index.php">Visit our Website</a></p>
                 </div>
                 <div class="col-md-9 pull-right">
                     <ul>

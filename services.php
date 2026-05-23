@@ -83,7 +83,7 @@ while ($row = mysqli_fetch_assoc($formatResult)) {
         </div>
         <div class="breadcrumb">
             <ul>
-                <li><a href="index-2.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li>Services</li>
             </ul>
         </div>

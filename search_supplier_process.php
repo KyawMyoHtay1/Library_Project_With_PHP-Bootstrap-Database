@@ -89,7 +89,7 @@ if (!isset($_SESSION['SID'])) {
                                                         echo "<td>" . $row['Phone'] . "</td>";
                                                         echo "<td>" . $row['Email'] . "</td>";
                                                         echo "<td>
-                                                                <a href='editsupplier.php?edit=" . $row['SupplierID'] . "' class='btn btn-primary'>Edit</a>
+                                                                <a href='editsupplierprocess.php?edit=" . $row['SupplierID'] . "' class='btn btn-primary'>Edit</a>
                                                                 <a href='deletesupplier.php?delete=" . $row['SupplierID'] . "' class='btn btn-danger' onclick='return confirm(\"Are you sure you want to delete this supplier?\")'>Delete</a>
                                                               </td>";
                                                         echo "</tr>";
