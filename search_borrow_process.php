@@ -1,7 +1,6 @@
 <?php
 session_start();
 include('dbconnect.php');
-include('nav.php');
 
 if (!isset($_SESSION['SID'])) {
     echo "<script>window.alert('Please Login')</script>";
@@ -73,6 +72,7 @@ if (isset($_GET['delete'])) {
 </head>
 <body class="admin_profile">
     <div id="wrapper">
+        <?php include('nav.php'); ?>
         <div id="page-wrapper">
             <ol class="breadcrumb">
                 <li><a href="admin.php">Dashboard</a></li>

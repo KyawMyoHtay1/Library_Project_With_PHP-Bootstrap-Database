@@ -1,7 +1,6 @@
 <?php
 session_start();
 include('dbconnect.php');
-include('nav.php');
 
 if (!isset($_SESSION['SID'])) {
     echo "<script>window.alert('Please Login')</script>";
@@ -103,6 +102,7 @@ $updateQuery = "UPDATE book
 </head>
 <body class="managebook-page">
     <div id="wrapper">
+        <?php include('nav.php'); ?>
 
         <!-- MAIN CONTENT -->
         <div id="page-wrapper">

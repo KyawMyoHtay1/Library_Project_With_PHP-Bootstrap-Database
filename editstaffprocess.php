@@ -1,7 +1,6 @@
 <?php 
 session_start();
 include('dbconnect.php');
-include('nav.php');
 
 //xxxxxxxxxxxxxxxxxxx
 // Ensure the user is logged in
@@ -85,6 +84,7 @@ if (isset($_POST['btnedit'])) {
 </head>
 <body class="admin_profile">
     <div id="wrapper">
+        <?php include('nav.php'); ?>
         <!-- MAIN CONTENT -->
         <div id="page-wrapper">
             <!-- BREADCRUMBS -->

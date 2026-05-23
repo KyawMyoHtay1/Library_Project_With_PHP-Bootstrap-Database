@@ -1,7 +1,6 @@
 <?php
 session_start();
 include('dbconnect.php');
-include('nav.php');
 
 // Ensure the user is logged in
 if (!isset($_SESSION['SID'])) {
@@ -62,6 +61,7 @@ if (!isset($_SESSION['SID'])) {
 </head>
 <body class="admin_profile">
     <div id="wrapper">
+        <?php include('nav.php'); ?>
         <div id="page-wrapper">
             <ol class="breadcrumb">
                 <li><a href="admin.php">Dashboard</a></li>

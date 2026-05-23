@@ -1,7 +1,6 @@
 <?php 
 session_start();
 include('dbconnect.php');
-include('nav.php');
 
 if (!isset($_SESSION['SID'])) {
     echo "<script>window.alert('Please Login')</script>";
@@ -47,6 +46,7 @@ if (!isset($_SESSION['SID'])) {
 </head>
 <body class="managebook-page">
     <div id="wrapper">
+        <?php include('nav.php'); ?>
         <!-- MAIN CONTENT -->
         <div id="page-wrapper">
             <!-- BREADCRUMBS -->

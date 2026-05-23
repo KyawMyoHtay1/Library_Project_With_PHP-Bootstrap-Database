@@ -2,7 +2,6 @@
 session_start();
 include('dbconnect.php');
 include('AutoID_Functions.php');
-include('nav.php');
 
 if (!isset($_SESSION['SID'])) {
     echo "<script>window.alert('Please Login')</script>";
@@ -96,6 +95,7 @@ VALUES
 </head>
 <body class="admin_profile">
     <div id="wrapper">
+        <?php include('nav.php'); ?>
 
         <!-- MAIN CONTENT -->
         <div id="page-wrapper">

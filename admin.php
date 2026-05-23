@@ -1,7 +1,6 @@
 <?php
 session_start();
 include('dbconnect.php');
-include('nav.php');
 
 if (isset($_SESSION['SID'])) 
 {
@@ -58,6 +57,7 @@ else if (!isset($_SESSION['SID']))
 </head>
 <body class="admin">
     <div id="wrapper">
+        <?php include('nav.php'); ?>
 
         <!-- MAIN CONTENT -->
         <div id="page-wrapper">

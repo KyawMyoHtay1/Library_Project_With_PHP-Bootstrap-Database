@@ -2,7 +2,6 @@
 session_start();
 include('dbconnect.php');
 include('AutoID_Functions.php');
-include('nav.php');
 
 // Ensure the user is logged in
 if (!isset($_SESSION['SID'])) {
@@ -83,6 +82,7 @@ if (isset($_POST['btnsubmit'])) {
 </head>
 <body class="admin_profile">
     <div id="wrapper">
+        <?php include('nav.php'); ?>
 
         <!-- MAIN CONTENT -->
         <div id="page-wrapper">

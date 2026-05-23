@@ -1,7 +1,6 @@
 <?php
 session_start();
 include('dbconnect.php');
-include('nav.php');
 
 if (isset($_SESSION['SID'])) {
     $SID = $_SESSION['SID'];
@@ -36,6 +35,7 @@ if (isset($_SESSION['SID'])) {
 </head>
 <body class="admin_profile">
     <div id="wrapper">
+        <?php include('nav.php'); ?>
 
         <!-- MAIN CONTENT -->
         <div id="page-wrapper">
